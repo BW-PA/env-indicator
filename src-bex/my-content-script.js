@@ -204,20 +204,20 @@ browser.storage.sync.get(['enable', 'envs']).then(result => {
   for (const env of envs) {
     switch (env.ruleType) {
       case 'contains':
-        if (url.includes(env.ruleValue.toLowerCase())) {
+        if (url.toLowerCase().includes(env.ruleValue.toLowerCase())) {
           setEnv(env)
           return
         }
         break
       case 'prefix':
-        if (url.startsWith(env.ruleValue.toLowerCase())) {
+        if (url.toLowerCase().startsWith(env.ruleValue.toLowerCase())) {
           setEnv(env)
           return
         }
         break
       case 'suffix':
         // For suffix, check domain to maintain backward compatibility
-        if (domain.endsWith(env.ruleValue.toLowerCase())) {
+        if (domain.toLowerCase().endsWith(env.ruleValue.toLowerCase())) {
           setEnv(env)
           return
         }
