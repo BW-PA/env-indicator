@@ -199,29 +199,31 @@ browser.storage.sync.get(['enable', 'envs']).then(result => {
     })
   }
 
+  const url = window.location.href
   const domain = window.location.host
   for (const env of envs) {
     switch (env.ruleType) {
       case 'contains':
-        if (domain.includes(env.ruleValue.toLowerCase())) {
+        if (url.includes(env.ruleValue.toLowerCase())) {
           setEnv(env)
           return
         }
         break
       case 'prefix':
-        if (domain.startsWith(env.ruleValue.toLowerCase())) {
+        if (url.startsWith(env.ruleValue.toLowerCase())) {
           setEnv(env)
           return
         }
         break
       case 'suffix':
+        // For suffix, check domain to maintain backward compatibility
         if (domain.endsWith(env.ruleValue.toLowerCase())) {
           setEnv(env)
           return
         }
         break
       case 'regex':
-        if (RegExp(env.ruleValue).test(domain)) {
+        if (RegExp(env.ruleValue).test(url)) {
           setEnv(env)
           return
         }
