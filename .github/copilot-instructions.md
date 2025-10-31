@@ -15,7 +15,7 @@
 
 ## Technology Stack
 
-- **Framework**: Vue 3 with Composition API
+- **Framework**: Vue 3 (using Options API)
 - **Build Tool**: Quasar Framework v2 (Vite-based)
 - **Browser Extension API**: WebExtension Polyfill
 - **Storage**: Chrome Storage API (sync)
@@ -177,7 +177,7 @@ Currently, no automated tests are configured. Manual testing workflow:
 
 ### Vue Component Style
 
-- Use Composition API or Options API (project uses Options API)
+- Project uses Options API (not Composition API)
 - Single File Components (.vue)
 - Template-first approach
 - Reactive data in `data()` function
@@ -288,7 +288,7 @@ Edit `setEnv()` function in `src-bex/my-content-script.js`:
 - **Storage not persisting**: Verify Chrome Storage permissions
 - **Bridge communication fails**: Check port connections in console
 - **Indicator not showing**: Debug domain matching logic, check CSS z-index
-- **Build errors**: Run `quasar prepare` to regenerate type files
+- **Build errors**: Run `quasar prepare` to regenerate .quasar build configuration directory
 
 ## Browser Extension Specifics
 
@@ -327,7 +327,7 @@ Edit `setEnv()` function in `src-bex/my-content-script.js`:
 - **@quasar/app-vite**: Quasar CLI build tool
 - **eslint**: Code linting
 - **prettier**: Code formatting
-- **vite-plugin-checker**: Build-time type checking and linting
+- **vite-plugin-checker**: Build-time linting integration
 
 ### Optional Dependencies
 
@@ -339,7 +339,7 @@ Edit `setEnv()` function in `src-bex/my-content-script.js`:
 
 **Build fails with module errors**
 
-- Run `quasar prepare` to regenerate .quasar directory
+- Run `quasar prepare` to regenerate .quasar build configuration directory
 - Clear node_modules and reinstall: `rm -rf node_modules && yarn install`
 
 **ESLint errors**
