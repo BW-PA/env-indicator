@@ -227,6 +227,7 @@ browser.storage.sync.get(['enable', 'envs']).then(result => {
           setEnv(env)
           return
         }
+        break
     }
   }
 })
