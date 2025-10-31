@@ -50,8 +50,14 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksData = [
   {
     title: 'Github',
-    caption: 'github.com/gaoliang/env-indicator',
+    caption: 'github.com/BW-PA/env-indicator',
     icon: 'code',
+    link: 'https://github.com/BW-PA/env-indicator'
+  },
+  {
+    title: 'Original Project',
+    caption: 'Fork of gaoliang/env-indicator',
+    icon: 'info',
     link: 'https://github.com/gaoliang/env-indicator'
   }
   // {

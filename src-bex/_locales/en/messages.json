@@ -1,11 +1,11 @@
 {
   "extensionName": {
-    "message": "Environment Indicator",
+    "message": "Environment Indicator URL",
     "description": "Name of the extension."
   },
 
   "extensionDescription": {
-    "message": "Add an environment marker to differentiate QA environments from production. In addition, you can create your own indicator rules",
+    "message": "Add an environment marker to differentiate QA environments from production. Supports URL-based matching (not just domain). Create your own indicator rules with regex, prefix, suffix, and contains patterns.",
     "description": "Description of the extension."
   },
   "addEnv": {

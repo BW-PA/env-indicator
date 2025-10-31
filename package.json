@@ -1,9 +1,9 @@
 {
   "name": "env-indicator-v2",
   "version": "0.0.1",
-  "description": "Add an environment marker to differentiate QA environments from production. In addition, you can create your own indicator rules",
-  "productName": "Environment Indicator",
-  "author": "gaoliang <gaoliangim@gmail.com>",
+  "description": "Add an environment marker to differentiate QA environments from production. Supports URL-based matching. Create your own indicator rules with regex, prefix, suffix, and contains patterns. Fork of gaoliang/env-indicator.",
+  "productName": "Environment Indicator URL",
+  "author": "BW-PA (fork of gaoliang <gaoliangim@gmail.com>)",
   "type": "module",
   "private": true,
   "scripts": {
