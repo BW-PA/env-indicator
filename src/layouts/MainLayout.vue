@@ -59,7 +59,7 @@ const linksData = [
     caption: 'Fork of gaoliang/env-indicator',
     icon: 'info',
     link: 'https://github.com/gaoliang/env-indicator'
-  }
+  },
   // {
   //   title: 'Chrome Store',
   //   caption: 'Chrome store',
