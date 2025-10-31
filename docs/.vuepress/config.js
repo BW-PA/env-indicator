@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Environment Indicator 环境指示器',
-  description: 'Environment Indicator 环境指示器',
+  title: 'Environment Indicator URL 环境指示器',
+  description: 'Environment Indicator URL 环境指示器',
   themeConfig: {
     logo: '/indicator.png',
     nav: [
@@ -10,7 +10,7 @@ module.exports = {
     ],
 
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-    repo: 'gaoliang/env-indicator',
+    repo: 'BW-PA/env-indicator',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
     repoLabel: '查看源码',
@@ -18,7 +18,7 @@ module.exports = {
     // 以下为可选的编辑链接选项
 
     // 假如你的文档仓库和项目本身不在一个仓库：
-    docsRepo: 'gaoliang/env-indicator',
+    docsRepo: 'BW-PA/env-indicator',
     // 假如文档不是放在仓库的根目录下：
     docsDir: 'docs',
     // 假如文档放在一个特定的分支下：

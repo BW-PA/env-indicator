@@ -1,12 +1,12 @@
-# Environment Indicator Browser Extension
+# Environment Indicator URL Browser Extension
 
+> This is a fork of [gaoliang/env-indicator](https://github.com/gaoliang/env-indicator) with enhanced URL-based matching capabilities.
 
 <p align="center">
-    <img width="180" src="https://raw.githubusercontent.com/gaoliang/env-indicator/main/docs/.vuepress/public/indicator.png" alt="logo"/>
+    <img width="180" src="https://raw.githubusercontent.com/BW-PA/env-indicator/main/docs/.vuepress/public/indicator.png" alt="logo"/>
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.com/gaoliang/env-indicator"><img src="https://travis-ci.com/gaoliang/env-indicator.svg?branch=main" alt="Chrome Store State"/></a>
   <a href="https://chrome.google.com/webstore/detail/env-indicator/kgdbcpllbbnimjgoiomfdebldcofmlbl"><img src="https://img.shields.io/chrome-web-store/v/kgdbcpllbbnimjgoiomfdebldcofmlbl" alt="Chrome Store State"/></a>
   <a href="https://chrome.google.com/webstore/detail/env-indicator/kgdbcpllbbnimjgoiomfdebldcofmlbl"><img src="https://img.shields.io/chrome-web-store/users/kgdbcpllbbnimjgoiomfdebldcofmlbl" alt="Chrome Store State"/></a>
   <a href="https://chrome.google.com/webstore/detail/env-indicator/kgdbcpllbbnimjgoiomfdebldcofmlbl"><img src="https://img.shields.io/chrome-web-store/stars/kgdbcpllbbnimjgoiomfdebldcofmlbl" alt="Chrome Store Rate"/></a>
@@ -15,7 +15,7 @@
 
 </p>
 
-Add an environment marker to differentiate QA environments from production. In addition, you can create your own indicator rules
+Add an environment marker to differentiate QA environments from production. Supports URL-based matching (not just domain). Create your own indicator rules with regex, prefix, suffix, and contains patterns.
 
 ### Screenshots
 ![examples](./docs/example.png)

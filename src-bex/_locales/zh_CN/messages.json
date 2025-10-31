@@ -1,11 +1,11 @@
 {
   "extensionName": {
-    "message": "Environment Indicator 环境指示器",
+    "message": "Environment Indicator URL 环境指示器",
     "description": "Name of the extension."
   },
 
   "extensionDescription": {
-    "message": "在页面上添加一个环境指示器，用来区分测试环境、开发环境、生产环境。 除此之外，你还可以创建自己的指示器规则",
+    "message": "在页面上添加一个环境指示器，用来区分测试环境、开发环境、生产环境。支持基于完整URL的匹配（不仅限于域名）。除此之外，你还可以创建自己的指示器规则，支持正则表达式、前缀、后缀和包含匹配。",
     "description": "Description of the extension."
   },
   "addEnv": {
